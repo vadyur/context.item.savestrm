@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="context.item.savestrm" name="SaveSTRM" version="0.1.0" provider-name="-=Vd=-">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0"/>
+	</requires>
+
+	<extension point="kodi.context.item" library="addon.py">
+		<item>
+			<label>Save STRM</label>
+			<visible>!IsEmpty(ListItem.Genre)</visible>
+		</item>
+	</extension>
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Save STRM files</summary>
+    <description lang="en">Save STRM files</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+  
+</addon>
