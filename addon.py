@@ -10,7 +10,7 @@ def make_filename(title):
 	return filename
 	
 ##-----------------------------------------------------------------------------
-def save_to_file(path):
+def save_file_to_folder(path):
 	file = path + '/' + make_filename(sys.listitem.getLabel()) + '.strm'
 	f = xbmcvfs.File (file, 'w')
 	result = f.write(sys.listitem.getfilename())
@@ -34,7 +34,7 @@ def main():
 	path = dialog.browseSingle(0, 'Select directory for save .strm', 'video')
 	print "context.item.savestrm: save to " + path
 	
-	save_to_file(path)
+	save_file_to_folder(path)
 	
 ##-----------------------------------------------------------------------------	
 if __name__ == '__main__':
